@@ -159,22 +159,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endcomment %}
 <p id="contact">
   <strong>Contact</strong>:
-  Please email
-  {% if page.email %}
-    {% for email in page.email %}
-      {% if forloop.last and page.email.size > 1 %}
-        or
-      {% else %}
-        {% unless forloop.first %}
-        ,
-        {% endunless %}
-      {% endif %}
-      <a href='mailto:{{email}}'>{{email}}</a>
-    {% endfor %}
-  {% else %}
-    to-be-announced
-  {% endif %}
-  for more information.  For installation and setup questions, please email geoffrey.boushey@ucsf.edu
+ Please email geoffrey.boushey@ucsf.edu for setup and syllabus-related questions. Email joanna.kang@ucsf.edu for all other questions.
 </p>
 
 <hr/>
